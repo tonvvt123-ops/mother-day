@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#fff1f5">
+
+    <title>ของขวัญสำหรับแม่ ❤️</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: Arial, "Tahoma", sans-serif;
+
+            color: #704b52;
+
+            overflow: hidden;
+
+            min-height: 100dvh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff9f5,
+                    #ffe9ef
+                );
+        }
+
+        .opening-content {
+
+            width: 90%;
+
+            max-width: 500px;
+
+            animation:
+                openingIn 1.5s ease;
+        }
+
+        .flower {
+
+            font-size: 70px;
+
+            margin-bottom: 15px;
+
+            animation:
+                flowerFloat 3s
+                ease-in-out
+                infinite;
+        }
+
+        h1 {
+
+            margin: 0 0 15px;
+
+            font-size:
+                clamp(
+                    38px,
+                    10vw,
+                    52px
+                );
+
+            color: #87545d;
+        }
+
+        .opening-text {
+
+            font-size:
+                clamp(
+                    19px,
+                    5vw,
+                    23px
+                );
+
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+        }
+
+        .open-button {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            padding:
+                18px
+                30px;
+
+            min-width: 240px;
+
+            border-radius: 60px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8a0a0,
+                    #d88498
+                );
+
+            box-shadow:
+                0 10px 25px
+                rgba(
+                    180,
+                    100,
+                    120,
+                    0.25
+                );
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .open-button:hover {
+
+            transform:
+                scale(1.06);
+
+            box-shadow:
+                0 15px 30px
+                rgba(
+                    180,
+                    100,
+                    120,
+                    0.3
+                );
+        }
+
+        .open-button:active {
+
+            transform:
+                scale(0.94);
+        }
+
+        /* หัวใจตกแต่ง */
+
+        .heart {
+
+            position: fixed;
+
+            font-size: 25px;
+
+            pointer-events: none;
+
+            animation:
+                floatHeart
+                7s
+                linear
+                infinite;
+
+            opacity: 0;
+        }
+
+        .heart1 {
+            left: 10%;
+            bottom: -50px;
+            animation-delay: 1s;
+        }
+
+        .heart2 {
+            left: 75%;
+            bottom: -50px;
+            animation-delay: 3s;
+        }
+
+        .heart3 {
+            left: 45%;
+            bottom: -50px;
+            animation-delay: 5s;
+        }
+
+        @keyframes openingIn {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px)
+                    scale(0.95);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+        }
+
+        @keyframes flowerFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-5deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-10px)
+                    rotate(5deg);
+            }
+        }
+
+        @keyframes floatHeart {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            15% {
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(180deg);
+
+                opacity: 0;
+            }
+        }
+
+        /* iPhone */
+
+        @media (max-width: 600px) {
+
+            .opening-content {
+                width: 90%;
+            }
+
+            .flower {
+                font-size: 55px;
+            }
+
+            .open-button {
+
+                width: 85%;
+
+                max-width: 320px;
+
+                font-size: 18px;
+
+                padding:
+                    17px
+                    20px;
+            }
+        }
+
+        @media (max-height: 700px) {
+
+            .flower {
+
+                font-size: 45px;
+
+                margin-bottom: 5px;
+            }
+
+            .opening-text {
+
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="heart heart1">
+        ❤️
+    </div>
+
+    <div class="heart heart2">
+        💕
+    </div>
+
+    <div class="heart heart3">
+        💗
+    </div>
+
+
+    <div class="opening-content">
+
+        <div class="flower">
+            💐
+        </div>
+
+        <h1>
+            แม่... ❤️
+        </h1>
+
+        <p class="opening-text">
+
+            มีอะไรบางอย่าง<br>
+            อยากให้แม่
+
+        </p>
+
+
+        <a
+            href="hug.html"
+            class="open-button">
+
+            💐 กดเพื่อเปิดของขวัญ 💐
+
+        </a>
+
+    </div>
+
+
+</body>
+
+</html>
+```

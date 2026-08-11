@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#fff1f5">
+
+    <title>ถึงแม่ ❤️</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            width: 100%;
+
+            min-height: 100%;
+        }
+
+        body {
+
+            font-family:
+                Arial,
+                "Tahoma",
+                sans-serif;
+
+            min-height: 100dvh;
+
+            overflow-x: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff9f5,
+                    #ffe8ed
+                );
+
+            color: #704b52;
+        }
+
+        .message-page {
+
+            min-height: 100dvh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding:
+                30px
+                20px;
+        }
+
+        .message-container {
+
+            width: 100%;
+
+            max-width: 600px;
+
+            animation:
+                contentIn
+                1.5s ease;
+        }
+
+        .message-flower {
+
+            font-size: 65px;
+
+            animation:
+                flowerFloat
+                3s
+                ease-in-out
+                infinite;
+        }
+
+        h1 {
+
+            font-size:
+                clamp(
+                    36px,
+                    9vw,
+                    50px
+                );
+
+            color: #87545d;
+
+            margin:
+                10px 0
+                20px;
+        }
+
+        .message-box {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.75
+                );
+
+            padding:
+                25px
+                20px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(
+                    150,
+                    90,
+                    100,
+                    0.12
+                );
+        }
+
+        .message-box p {
+
+            font-size:
+                clamp(
+                    17px,
+                    4.5vw,
+                    20px
+                );
+
+            line-height: 1.9;
+
+            margin:
+                12px 0;
+        }
+
+        .message-box h2 {
+
+            font-size:
+                clamp(
+                    22px,
+                    6vw,
+                    30px
+                );
+
+            color: #b34f68;
+
+            margin:
+                20px 0;
+        }
+
+        .final-flower {
+
+            font-size: 55px;
+
+            margin:
+                20px 0 5px;
+
+            animation:
+                flowerFloat
+                3s
+                ease-in-out
+                infinite;
+        }
+
+        .end-text {
+
+            font-size: 18px;
+
+            margin-bottom: 15px;
+        }
+
+        .back-button {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8a0a0,
+                    #d88498
+                );
+
+            padding:
+                14px
+                25px;
+
+            border-radius: 50px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            transition:
+                transform 0.3s ease;
+        }
+
+        .back-button:hover {
+
+            transform:
+                scale(1.06);
+        }
+
+        /* ดอกไม้ตกแต่ง */
+
+        .flower {
+
+            position: fixed;
+
+            font-size: 30px;
+
+            pointer-events: none;
+
+            animation:
+                floatFlower
+                8s
+                linear
+                infinite;
+        }
+
+        .flower1 {
+
+            left: 8%;
+
+            bottom: -50px;
+        }
+
+        .flower2 {
+
+            right: 8%;
+
+            bottom: -50px;
+
+            animation-delay: 3s;
+        }
+
+        @keyframes contentIn {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+        @keyframes flowerFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-5deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-10px)
+                    rotate(5deg);
+            }
+        }
+
+        @keyframes floatFlower {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            15% {
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(180deg);
+
+                opacity: 0;
+            }
+        }
+
+        /* iPhone */
+
+        @media (max-width: 600px) {
+
+            .message-page {
+
+                align-items:
+                    flex-start;
+
+                padding-top:
+                    35px;
+            }
+
+            .message-container {
+
+                width: 92%;
+            }
+
+            .message-box {
+
+                padding:
+                    20px
+                    17px;
+
+                border-radius: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ดอกไม้ลอย -->
+
+    <div class="flower flower1">
+        🌸
+    </div>
+
+    <div class="flower flower2">
+        🌷
+    </div>
+
+
+    <main class="message-page">
+
+        <div class="message-container">
+
+
+            <div class="message-flower">
+                💐
+            </div>
+
+
+            <h1>
+                ถึงแม่ ❤️
+            </h1>
+
+
+            <div class="message-box">
+
+                <p>
+                    ขอบคุณแม่สำหรับทุกอย่างนะ
+                </p>
+
+                <p>
+                    ขอบคุณที่คอยดูแล<br>
+                    คอยเป็นห่วง<br>
+                    และคอยอยู่ข้างหนูเสมอ
+                </p>
+
+                <p>
+                    หนูอาจไม่ได้พูดทุกอย่างออกมา<br>
+                    แต่หนูอยากให้แม่รู้ว่า
+                </p>
+
+                <h2>
+                    แม่สำคัญกับหนูมาก ❤️
+                </h2>
+
+                <p>
+                    หนูรักแม่มาก ๆ
+                </p>
+
+                <p>
+                    เอาจริง ๆ หนูก็บอกแม่<br>
+                    ทุกวันอยู่แล้วละ 😂❤️
+                </p>
+
+                <p>
+                    แต่วันนี้หนูอยากบอกอีกครั้งว่า
+                </p>
+
+                <h2>
+                    รักแม่ที่สุดนะ 🫂❤️
+                </h2>
+
+            </div>
+
+
+            <div class="final-flower">
+                💐
+            </div>
+
+
+            <p class="end-text">
+                สุขสันต์วันแม่นะครับ/คะ ❤️
+            </p>
+
+
+            <a
+                href="index.html"
+                class="back-button">
+
+                ❤️ ดูอีกครั้ง
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
+```
